@@ -1,0 +1,14 @@
+terminal commands for juptyerbook
+
+# update book, be sure you are in Github-Mac . . . use if need be: cd ..
+
+jupyter-book build philstatshomework2/
+
+PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter-book build philstatshomework2/
+
+# update web version of book
+
+cd philstatshomework2
+
+ghp-import -n -p -f _build/html
+
