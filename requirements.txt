@@ -1,0 +1,10 @@
+jupyter-book
+matplotlib
+numpy
+scipy
+pandas
+statistics
+metakernel
+tabulate
+IPython.display
+ipywidgets 
