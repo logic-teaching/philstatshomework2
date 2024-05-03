@@ -6,5 +6,5 @@ pandas
 statistics
 metakernel
 tabulate
-IPython.display
+IPython
 ipywidgets 
