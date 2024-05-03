@@ -12,3 +12,8 @@ cd philstatshomework2
 
 ghp-import -n -p -f _build/html
 
+binder 
+
+https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/HEAD
+
+https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main
