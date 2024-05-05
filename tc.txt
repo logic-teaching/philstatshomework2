@@ -16,7 +16,11 @@ cd philstatshomework2
 
 ghp-import -n -p -f _build/html
 
-# remember to set on github the branch to main 
+# update binder 
+
+just update github 
+
+# at very beginning remember to set on github the branch to main 
 
 # binder 
 
