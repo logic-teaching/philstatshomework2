@@ -7,3 +7,4 @@ statistics
 metakernel
 IPython
 ipywidgets
+ipynb
