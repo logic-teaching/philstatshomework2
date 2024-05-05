@@ -18,14 +18,23 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-my_nonuniform_prior[0] = .5
+my_nonuniform_prior = [0 for _ in range(m)]
+
+my_nonuniform_prior = [(1-value_for_non_uniform_prior)/m] * m
+
+my_nonuniform_prior[m//2] = value_for_non_uniform_prior 
+
+bayes_pie_binomial(n, m, my_nonuniform_prior, my_data)
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[7], line 1[0m
-[0;32m----> 1[0m my_nonuniform_prior[[38;5;241m0[39m] [38;5;241m=[39m [38;5;241m.5[39m
+Cell [0;32mIn[6], line 3[0m
+[1;32m      1[0m my_nonuniform_prior [38;5;241m=[39m [[38;5;241m0[39m [38;5;28;01mfor[39;00m _ [38;5;129;01min[39;00m [38;5;28mrange[39m(m)]
+[0;32m----> 3[0m my_nonuniform_prior [38;5;241m=[39m [([38;5;241m1[39m[38;5;241m-[39mvalue_for_non_uniform_prior)[38;5;241m/[39mm] [38;5;241m*[39m m
+[1;32m      5[0m my_nonuniform_prior[m[38;5;241m/[39m[38;5;241m/[39m[38;5;241m2[39m] [38;5;241m=[39m value_for_non_uniform_prior 
+[1;32m      7[0m bayes_pie_binomial(n, m, my_nonuniform_prior, my_data)
 
-[0;31mNameError[0m: name 'my_nonuniform_prior' is not defined
+[0;31mNameError[0m: name 'value_for_non_uniform_prior' is not defined
 
