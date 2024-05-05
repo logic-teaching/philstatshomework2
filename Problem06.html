@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problem06';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="References" href="references.html" />
+    <link rel="next" title="Problem 7" href="Problem07.html" />
     <link rel="prev" title="Problems 2,3,4,5" href="Problem02.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,6 +181,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problem02.html">Problems 2,3,4,5</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem07.html">Problem 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem08.html">Problem 8</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -383,7 +385,7 @@ document.write(`
 <h1>Problem 6<a class="headerlink" href="#problem-6" title="Link to this heading">#</a></h1>
 <section id="the-washing-out-of-the-priors">
 <h2>The washing out of the priors<a class="headerlink" href="#the-washing-out-of-the-priors" title="Link to this heading">#</a></h2>
-<p>People object to Bayesianism on the ground that the prior is subjective. One Bayesian response is that the differences between priors get “washed out” as one further and further updates. In the text, we quoted from Howson-Urbach. Here is a similar statement from a philosophy of science textbook:</p>
+<p>This problem concerns <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap09.html#visualizing-a-n-step-application-of-bayes-theorem-the-washing-out-of-the-priors">the washing out of the priors</a>. Recall that people object to Bayesianism on the ground that the prior is subjective. One Bayesian response is that the differences between priors get “washed out” as one further and further updates. In <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap09.html#visualizing-a-n-step-application-of-bayes-theorem-the-washing-out-of-the-priors">the text</a>, we quoted from Howson-Urbach. Here is a similar statement from a philosophy of science textbook:</p>
 <blockquote>
 <div><p>This illustrates a general feature of Bayes’ rule. Suppose that there are two people with differing prior probabilities– as far apart as you like provided that neither has an extreme value of 0 or 1. Then, if they agree on the likelihoods and if they share the same observational evidence, their posterior probabilities will get closer and closer as the evidence accumulates. The influence of the prior probabilities on the posterior probabilities decreases as more and more evidence becomes available. This phenomenon of washing out of the prior should help to ease the worry we might have about appealing to admittedly subjective degrees of convention in our evaluations of scientific hypotheses (<span id="id1">[<a class="reference internal" href="references.html#id2" title="Merrilee H Salmon and Clark Glymour. Introduction to the Philosophy of Science. Hackett Publishing, January 1999.">Salmon and Glymour, 1999</a>]</span> p. 83)</p>
 </div></blockquote>
@@ -432,11 +434,11 @@ document.write(`
 
         <span class="c1"># as many data points as you want, as long as they are integers ≤ n</span>
 
-<span class="n">my_non_uniform_value</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">my_non_uniform_value</span> <span class="o">=</span> <span class="mf">0.6</span>
 
         <span class="c1"># change the prior probability so that the middle parameter has this prior probability, and the others are uniform across the remaining amount</span>
 
-        <span class="c1"># e.g. if you choose .5 then the other m-1 many parameters will be set to .5/(m-1)</span>
+        <span class="c1"># e.g. if you choose .6 then the other m-1 many parameters will be set to .6/(m-1)</span>
 
         <span class="c1"># choose my_data values close to n/2 to see the effect of the non-uniform prior</span>
 </pre></div>
@@ -603,7 +605,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="_images/f4989ed18fee0272cfb407478670d62ef93b77408cf518acac5e7eef777e29ad.png" src="_images/f4989ed18fee0272cfb407478670d62ef93b77408cf518acac5e7eef777e29ad.png" />
+<img alt="_images/6ce6127d0cb13b5f43ce8316c627f6b4fef7d5f5d08630a32bf4f1c41d896930.png" src="_images/6ce6127d0cb13b5f43ce8316c627f6b4fef7d5f5d08630a32bf4f1c41d896930.png" />
 </div>
 </div>
 </section>
@@ -649,11 +651,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="references.html"
+       href="Problem07.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">References</p>
+        <p class="prev-next-title">Problem 7</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
