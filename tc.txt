@@ -18,7 +18,7 @@ ghp-import -n -p -f _build/html
 
 # update binder 
 
-just update github 
+just update github
 
 # at very beginning remember to set on github the branch to main 
 
