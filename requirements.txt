@@ -5,6 +5,5 @@ scipy
 pandas
 statistics
 metakernel
-tabulate
 IPython
-ipywidgets 
+ipywidgets

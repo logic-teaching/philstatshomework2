@@ -12,12 +12,10 @@ cd philstatshomework2
 
 ghp-import -n -p -f _build/html
 
+# remember to set on github the branch to main 
+
 # binder 
 
-https://www.youtube.com/watch?v=owSGVOov9pQ&t=4m48s
+https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main  ## https://www.youtube.com/watch?v=owSGVOov9pQ&t=4m48s
 
-https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/HEAD
 
-https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main
-
-https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/master
