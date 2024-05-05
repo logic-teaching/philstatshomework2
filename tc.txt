@@ -2,7 +2,7 @@ terminal commands for juptyerbook
 
 # update book
 
-delete build
+sudo rm -r _build
 
 cd ..
 
