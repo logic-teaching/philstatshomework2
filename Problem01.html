@@ -371,15 +371,24 @@ document.write(`
   <section id="problem-1">
 <h1>Problem 1<a class="headerlink" href="#problem-1" title="Link to this heading">#</a></h1>
 <p>This is a simple application of Bayes’ Theorem.</p>
-<p><strong>First</strong> you start a new job and have to work with a new coworker on two projects, which are independent of one another.</p>
-<p>You start with a prior that 3/4 of people are unorganized.</p>
-<p>You further believe that organized people get their work in on time 4/5 of the time, while unorganized people get their work on time only 1/3 of the time.</p>
-<p>On each of your two projects, your worker gets their material in on time.</p>
-<p>What should be your posterior degree of belief that your coworker is organized?</p>
+<p><strong>First</strong> you start a new job and have to work with a specific coworker on two projects, which are independent of one another.</p>
+<p>You start with a prior that 3/4 of people are unorganized and 1/4 of people are organized.</p>
+<p>You further believe that unorganized people get their work on time 1/3 of the time, while organized people get their work on time 4/5 of the time.</p>
+<p>On each of your two projects, your coworker gets their part of the work in on time.</p>
+<p>What should be your posterior be in your coworker being organized?</p>
+<p>[For a large amount of partial credit, do it just in the case where there is one project].</p>
 <p><strong>Second</strong>, explain how this can be conceived of as an application of Bayes’ Theorem in the sense of</p>
 <div class="math notranslate nohighlight">
 \[p(\theta \mid x) = \frac{p(x\mid \theta)\cdot p(\theta)}{p(x)}\]</div>
-<p>That is, explain what the random variable is, what the parameter space is, and what the sample space is.</p>
+<p>That is, explain in 4 complete English sentences:</p>
+<ol class="arabic simple">
+<li><p>What the values of <span class="math notranslate nohighlight">\(x\)</span> range over.</p></li>
+<li><p>What the values of <span class="math notranslate nohighlight">\(\theta\)</span> range over.</p></li>
+<li><p>Intuitively what the source of the prior is: mere degrees of belief, or related to frequencies and/or testimony and experience of some kind and if so what kind.</p></li>
+<li><p>Intuitively what the source of the likelihoods is: mere pdfs of some kind, or related to if-then statements of some kind and from some source and if so what kind.</p></li>
+</ol>
+<p>For 3-4, put yourself in the not unthinkinable shoes of the person described in the scenario and try to extrapolate on what one’s thinking would be.</p>
+<p>The purpose of this example is to sensitize ourselves to the diversity of considerations that tend to enter into applications of Bayes’ Theorem in practice, which belie either simple stories told by Bayesians and their critics.</p>
 </section>
 
     <script type="text/x-thebe-config">
