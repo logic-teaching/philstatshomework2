@@ -20,4 +20,5 @@ In terms of workflow, I would recommend:
 
 - put into gradescope in bruinlearn
 
-- be working near a computer or phone so you can use the links on this page, which reference back to the book
+- be working near a computer or phone so you can use [the book page](https://logic-teaching.github.io/philstatsbook/intro.html) (note that this file is being hosted on a different site than the book, hence you'll need to head back to the book page sometimes)
+
