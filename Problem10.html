@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problem 7 &#8212; Philstatshomework2</title>
+    <title>Problem 10 &#8212; Philstatshomework2</title>
   
   
   
@@ -57,11 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Problem07';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problem10';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Problem 8" href="Problem08.html" />
-    <link rel="prev" title="Problem 6" href="Problem06.html" />
+    <link rel="next" title="References" href="references.html" />
+    <link rel="prev" title="Problem 9" href="Problem09.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,10 +182,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Problem01.html">Problem 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem02.html">Problems 2,3,4,5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem06.html">Problem 6</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem07.html">Problem 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem08.html">Problem 8</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem09.html">Problem 9</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem10.html">Problem 10</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -239,7 +241,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main?urlpath=lab/tree/Problem07.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main?urlpath=lab/tree/Problem10.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +272,7 @@
       
       
       
-      <li><a href="_sources/Problem07.ipynb" target="_blank"
+      <li><a href="_sources/Problem10.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +354,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problem 7</h1>
+    <h1>Problem 10</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,14 +368,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problem-7">
-<h1>Problem 7<a class="headerlink" href="#problem-7" title="Link to this heading">#</a></h1>
-<p>Consider the following objection to the Bayesian “washing out of the priors” response:</p>
-<ul class="simple">
-<li><p>If the claim is that is that in the limit the differences between the priors goes to zero, then this is not relevant for our beliefs and actions, since those happen at specific stages of our inquiry and not in the limit.</p></li>
-<li><p>If the claim is that in a great many cases the differences between the priors is small, then this does not deliver the requisite type of assurance since “a great many” is not “all” and anything can happen at finite stages.</p></li>
-</ul>
-<p>Write a short 1 paragraph esssay which responds to this objection on behalf of the Bayesian.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-10">
+<h1>Problem 10<a class="headerlink" href="#problem-10" title="Link to this heading">#</a></h1>
+<p>This problem is about the probabilities of <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap07.html#two-types-of-error">Type I and Type II errors</a>:</p>
+<ol class="arabic simple">
+<li><p>Probability of a Type I Error is low iff, under the assumption that the null hypothesis <span class="math notranslate nohighlight">\(H_0\)</span> is true, the probability of the event <span class="math notranslate nohighlight">\(T_n\geq c\)</span> is low.</p></li>
+<li><p>Probability of Type II Error is low iff, under the assumption that the null hypothesis <span class="math notranslate nohighlight">\(H_0\)</span> is false, the probability of the event <span class="math notranslate nohighlight">\(T_n&lt;c\)</span> is low.</p></li>
+</ol>
+<p>Neyman and Pearson thought in terms of behavior rather than knowledge, justification, and belief, but contemporary philosophy inevitably tends to focus on the latter trio anytime that inference is involved. Hence, if we think about <span class="math notranslate nohighlight">\(T_n&lt; c\)</span> as the chief and only consideration relevant for belief in <span class="math notranslate nohighlight">\(H_0\)</span>, then these become:</p>
+<ol class="arabic simple" start="3">
+<li><p>The probability of a Type I error is low iff, under the assumption that the null hypothesis <span class="math notranslate nohighlight">\(H_0\)</span> is true, it is highly probable that one believes <span class="math notranslate nohighlight">\(H_0\)</span>.</p></li>
+<li><p>The probability of a Type II error is low iff, under the assumption that the null hypothesis <span class="math notranslate nohighlight">\(H_0\)</span> is false, it is highly probable that one does not believe <span class="math notranslate nohighlight">\(H_0\)</span>.</p></li>
+</ol>
+<p>There is then a certain ‘family resemblence’ to Nozick’s tracking theory of knowledge, where one’s knowledge of <span class="math notranslate nohighlight">\(H_0\)</span> is characterized as one’s belief in <span class="math notranslate nohighlight">\(H_0\)</span> plus the truth of <span class="math notranslate nohighlight">\(H_0\)</span> plus the conjunction of the following two conditions:</p>
+<ol class="arabic simple" start="5">
+<li><p>Adherence: if <span class="math notranslate nohighlight">\(H_0\)</span> were true, then one would believe <span class="math notranslate nohighlight">\(H_0\)</span>.</p></li>
+<li><p>Sensitivity: if <span class="math notranslate nohighlight">\(H_0\)</span> were false, then one would not believe <span class="math notranslate nohighlight">\(H_0\)</span>.</p></li>
+</ol>
+<p>The author of these conditions, Nozick, saw this connection too, writing that:</p>
+<blockquote>
+<div><p>The tracking account of knowledge was formulated without having statistical errors in mind, but [sensitivity and adherence] can be (roughly) put as: the person wouldn’t commit a type II error about <span class="math notranslate nohighlight">\([H_0]\)</span>, and he wouldn’t commit a type I error about <span class="math notranslate nohighlight">\([H_0]\)</span>. In contrast to Neyman-Pearson testing, our discussion of knowledge […] seemed to making avoiding Type II errors more crucial than avoiding type I errors, so that in their [the statistician’s] terminology, [the probability of a type II error] should be fixed as [low], and the [probability of a type I error] minimized subject to that (<span id="id1">[<a class="reference internal" href="references.html#id3" title="Robert Nozick. Philosophical Explanations. Harvard University Press, March 1983.">Nozick, 1983</a>]</span> pp. 260-261 fn).</p>
+</div></blockquote>
+<p>Choose one of the following two prompts and write a 1 paragraph response:</p>
+<ol class="arabic simple">
+<li><p>Choose either <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap07.html#example-1-revisited">Chapter 7 Example 1</a> or <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap07.html#example-2-revisited">Chapter 7 Example 2</a> and use it to evaluate the plausibility of Nozick’s suggestion for making sure that the probability of a type II error is low and then subsequently getting the probability of a type I error as low as possible.</p></li>
+<li><p>Argue that Nozick is wrong to suggest that there is a connection of any kind between adherence and low probability of type I error and/or sensitivity and low probability of type II error.</p></li>
+</ol>
+<p><em>Hint</em>: for prompt 1, make it more concrete by thinking about Binomial trials not in terms of coins but in terms of success of procedures or interventions; and likewise make it more concrete by thinking about normal distributions in terms of measurements related to people which are high stakes so that it is important that we know where the center of the bell shape is.</p>
+<p><em>Hint</em>: for prompt 2, try to restrict attention to the hypotheses <span class="math notranslate nohighlight">\(H_0\)</span> which actually show up in hypotheses tests; obviously the fit disappears when we try to make the hypotheses into arbitrary propositions.</p>
+<p><em>Note</em>: the purpose of this example is simply to get us to critical reflect on Type I and Type II errors mean by reference to more canonical notions in philosophy.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -407,20 +430,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problem06.html"
+       href="Problem09.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problem 6</p>
+        <p class="prev-next-title">Problem 9</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problem08.html"
+       href="references.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problem 8</p>
+        <p class="prev-next-title">References</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
