@@ -367,7 +367,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalling-and-formatting-the-two-types-of-errors">Recalling and formatting the two types of errors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-medical-diagonistic-tests">Examples in medical diagonistic tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensitivity-and-specificity">Sensitivity and specificity</a></li>
 </ul>
             </nav>
         </div>
@@ -412,7 +412,7 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(\alpha\)</span> be the probability of a Type I error</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta\)</span> be the probability of a Type II error</p></li>
 </ul>
-<p>Technically, <span class="math notranslate nohighlight">\(\beta\)</span> only makes sense once one has fixed a specific alternative to the null hypothesis, but is often used in a looser sense.</p>
+<p>Technically, <span class="math notranslate nohighlight">\(\beta\)</span> only makes sense once one has fixed a specific alternative to the null hypothesis, but is often used despite this.</p>
 <p>It is further conventional to call <span class="math notranslate nohighlight">\(1-\beta\)</span> the <em>power</em> of the test.</p>
 <p>Hence, with this notation in place, we can fill in the probabilities to the chart:</p>
 <table class="table">
@@ -457,8 +457,8 @@ document.write(`
 </tbody>
 </table>
 </section>
-<section id="examples-in-medical-diagonistic-tests">
-<h2>Examples in medical diagonistic tests<a class="headerlink" href="#examples-in-medical-diagonistic-tests" title="Link to this heading">#</a></h2>
+<section id="sensitivity-and-specificity">
+<h2>Sensitivity and specificity<a class="headerlink" href="#sensitivity-and-specificity" title="Link to this heading">#</a></h2>
 <p>In the analysis of medical diagonsis tests, there is a similar rubric with its own conventional terminology:</p>
 <table class="table">
 <thead>
@@ -494,9 +494,14 @@ document.write(`
 <li><p>Over the counter covid tests have lower sensitivity but high specificity (see bottom of <a class="reference external" href="https://www.nytimes.com/wirecutter/reviews/at-home-covid-test-kits/">this nytimes page</a>)</p></li>
 </ol>
 <p>There are two options for this problem.</p>
-<p>Option 1: Mayo’s idea is that one should defend the classical view by arguing that as a general rule, we should accept only those hypotheses which have undergone a severe test in the sense that they have low probability of a type I error. Under the above correspondence (borne out in part by Option 2), this would suggest that, as a general rule, we should accept only those hypotheses which have undergone a test with high specificity or a test with very few false positives. Write a 1 paragraph essay which evaluates whether this is plausible, bearing in mind that one will have to have a more expansive notion of “condition” that works outside of health contexts as well.</p>
-<p>Option 2: Given a medical diagnosis test as above with patients being the union of TP, FN, FP, TN, construct a hypothesis test whose power <span class="math notranslate nohighlight">\(1-\beta\)</span> is the sensitivity of the diagnosis test and whose <span class="math notranslate nohighlight">\(1-\alpha\)</span> is the specificity of the diagnosis test. This shows that the hypothesis testing is a more general concept than the medical diagonsis case.</p>
-<p><em>Hint (kind of an outline of a solution)</em>: make the sample space the union of the four sets  TP, FN, FP, TN (draw a picture of them as four quadrants of a square). Let <span class="math notranslate nohighlight">\(X\)</span> be the random variable which is <span class="math notranslate nohighlight">\(1\)</span> on <span class="math notranslate nohighlight">\(TP\cup FP\)</span> and 0 on <span class="math notranslate nohighlight">\(FN\cup TN\)</span>. Consider a two element parameter space <span class="math notranslate nohighlight">\(\theta^-\)</span> (condition negative) and <span class="math notranslate nohighlight">\(\theta^+\)</span> (condition positive). Define</p>
+<p>Option 1: <a class="reference external" href="https://logic-teaching.github.io/philstatsbook/Chap08.html#the-chief-virtue-of-mayo-s-account">Mayo’s idea</a> is that one should defend the classical view by arguing that as a general rule, we should accept only those hypotheses which have undergone a severe test in the sense that they have low probability of a type I error. Under the above correspondence (borne out in part by Option 2), this would suggest that, as a general rule, we should accept only those hypotheses which have undergone a test with high specificity or a test with very few false positives. Write a 1 paragraph essay which evaluates whether this is plausible, bearing in mind that one will have to have a more expansive notion of “condition” that works outside of health contexts.</p>
+<p>Option 2: Given a medical diagnosis test as above with patients being the union of TP, FN, FP, TN, construct a hypothesis test</p>
+<ul class="simple">
+<li><p>whose power <span class="math notranslate nohighlight">\(1-\beta\)</span> is the sensitivity of the diagnosis test</p></li>
+<li><p>whose <span class="math notranslate nohighlight">\(1-\alpha\)</span> is the specificity of the diagnosis test.</p></li>
+</ul>
+<p>This shows that the hypothesis testing is a more general concept than the medical diagonsis case.</p>
+<p><em>Hint (kind of an outline of a solution)</em>: make the sample space the union of the four sets  <span class="math notranslate nohighlight">\(TP\)</span>, <span class="math notranslate nohighlight">\(FN\)</span>, <span class="math notranslate nohighlight">\(FP\)</span>, <span class="math notranslate nohighlight">\(TN\)</span> (draw a picture of them as four quadrants of a square). Let <span class="math notranslate nohighlight">\(X\)</span> be the random variable which is <span class="math notranslate nohighlight">\(1\)</span> on <span class="math notranslate nohighlight">\(TP\cup FP\)</span> and 0 on <span class="math notranslate nohighlight">\(FN\cup TN\)</span>. Consider a two element parameter space <span class="math notranslate nohighlight">\(\theta^-\)</span> (condition negative) and <span class="math notranslate nohighlight">\(\theta^+\)</span> (condition positive). Define</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(p_{\theta^-}(1)=\frac{FP}{FP+TN}\)</span> and <span class="math notranslate nohighlight">\(p_{\theta^-}(0)=1-p_{\theta^-}(1)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(p_{\theta^+}(0)=\frac{FN}{TP+FN}\)</span> and <span class="math notranslate nohighlight">\(p_{\theta^+}(1)=1-p_{\theta^+}(1)\)</span>.</p></li>
@@ -506,6 +511,7 @@ document.write(`
 <li><p>if <span class="math notranslate nohighlight">\(X\sim p_{\theta^-}\)</span> and <span class="math notranslate nohighlight">\(\alpha=P(T\geq c)\)</span>, then <span class="math notranslate nohighlight">\(1-\alpha =  \frac{TN}{FP+TN}\)</span></p></li>
 <li><p>if <span class="math notranslate nohighlight">\(X\sim p_{\theta^+}\)</span> and <span class="math notranslate nohighlight">\(\beta = P(T&lt;c)\)</span>, then <span class="math notranslate nohighlight">\(1-\beta = \frac{TP}{TP+FN}\)</span>.</p></li>
 </ul>
+<p><em>Optionally</em>, further show that there are probability measures <span class="math notranslate nohighlight">\(P^{-}\)</span> and <span class="math notranslate nohighlight">\(P^+\)</span> on the sample space such that <span class="math notranslate nohighlight">\(P^{-}(X=i)=p_{\theta^-}(i)\)</span> and <span class="math notranslate nohighlight">\(P^{+}(X=i)=p_{\theta^+}(i)\)</span> for <span class="math notranslate nohighlight">\(i=0,1\)</span>. Hint, for this, make <span class="math notranslate nohighlight">\(P^{-}\)</span> and <span class="math notranslate nohighlight">\(P^+\)</span> have probability zero on certain columns (as depicted in the four quadrants).</p>
 </section>
 </section>
 
@@ -574,7 +580,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalling-and-formatting-the-two-types-of-errors">Recalling and formatting the two types of errors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-medical-diagonistic-tests">Examples in medical diagonistic tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensitivity-and-specificity">Sensitivity and specificity</a></li>
 </ul>
   </nav></div>
 
