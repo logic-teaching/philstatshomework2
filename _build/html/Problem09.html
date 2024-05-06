@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problem 7 &#8212; Philstatshomework2</title>
+    <title>Problem 9 &#8212; Philstatshomework2</title>
   
   
   
@@ -57,11 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Problem07';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problem09';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Problem 8" href="Problem08.html" />
-    <link rel="prev" title="Problem 6" href="Problem06.html" />
+    <link rel="next" title="Problem 10" href="Problem10.html" />
+    <link rel="prev" title="Problem 8" href="Problem08.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,9 +182,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Problem01.html">Problem 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem02.html">Problems 2,3,4,5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem06.html">Problem 6</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem07.html">Problem 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem08.html">Problem 8</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem09.html">Problem 9</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 9</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem10.html">Problem 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
@@ -239,7 +241,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main?urlpath=lab/tree/Problem07.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/logic-teaching/philstatshomework2/main?urlpath=lab/tree/Problem09.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -270,7 +272,7 @@
       
       
       
-      <li><a href="_sources/Problem07.ipynb" target="_blank"
+      <li><a href="_sources/Problem09.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,7 +343,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -352,11 +356,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problem 7</h1>
+    <h1>Problem 9</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalling-and-formatting-the-two-types-of-errors">Recalling and formatting the two types of errors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-medical-diagonistic-tests">Examples in medical diagonistic tests</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -366,14 +379,134 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problem-7">
-<h1>Problem 7<a class="headerlink" href="#problem-7" title="Link to this heading">#</a></h1>
-<p>Consider the following objection to the Bayesian “washing out of the priors” response:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-9">
+<h1>Problem 9<a class="headerlink" href="#problem-9" title="Link to this heading">#</a></h1>
+<section id="recalling-and-formatting-the-two-types-of-errors">
+<h2>Recalling and formatting the two types of errors<a class="headerlink" href="#recalling-and-formatting-the-two-types-of-errors" title="Link to this heading">#</a></h2>
+<p>Recall Type I and Type II errors:</p>
 <ul class="simple">
-<li><p>If the claim is that is that in the limit the differences between the priors goes to zero, then this is not relevant for our beliefs and actions, since those happen at specific stages of our inquiry and not in the limit.</p></li>
-<li><p>If the claim is that in a great many cases the differences between the priors is small, then this does not deliver the requisite type of assurance since “a great many” is not “all” and anything can happen at finite stages.</p></li>
+<li><p>Type I error: the null hypothesis is true but our test rejects it. This would be when we observe <span class="math notranslate nohighlight">\(T_n(\omega)\geq c\)</span>, where <span class="math notranslate nohighlight">\(\omega\)</span> is the actual world, and where the application of our rule leads us to mistakenly conclude that the null hypothesis is false.</p></li>
+<li><p>Type II error: the null hypothesis is false but our test fails to reject it. This would be when we observe <span class="math notranslate nohighlight">\(T_n(\omega)&lt;c\)</span>, where <span class="math notranslate nohighlight">\(\omega\)</span> is the actual world, and so our test does not rule out the null hypothesis even though it is false.</p></li>
 </ul>
-<p>Write a short 1 paragraph esssay which responds to this objection on behalf of the Bayesian.</p>
+<p>Here is a diagram of the Type I and Type II errors:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> false</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> true</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p></p></td>
+<td><p>Type I error</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fail to reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p>Type II error</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>It is conventional to let</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> be the probability of a Type I error</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> be the probability of a Type II error</p></li>
+</ul>
+<p>Technically, <span class="math notranslate nohighlight">\(\beta\)</span> only makes sense once one has fixed a specific alternative to the null hypothesis, but is often used in a looser sense.</p>
+<p>It is further conventional to call <span class="math notranslate nohighlight">\(1-\beta\)</span> the <em>power</em> of the test.</p>
+<p>Hence, with this notation in place, we can fill in the probabilities to the chart:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> false</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> true</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\beta\)</span> (power)</p></td>
+<td><p>Type I error <span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Fail to reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p>Type II error <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\alpha\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Note that in evaluating these probabilities, we are conditioning on the column headers (<span class="math notranslate nohighlight">\(H_0\)</span> false, <span class="math notranslate nohighlight">\(H_0\)</span> true) rather than on the row headers. Hence, the values in each of the columns adds up to one. If we add one more row that highlights when the non-error happened in each column, we get:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> false</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(H_0\)</span> true</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\beta\)</span> (power)</p></td>
+<td><p>Type I error <span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Fail to reject <span class="math notranslate nohighlight">\(H_0\)</span></p></td>
+<td><p>Type II error <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\alpha\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>The probability of non-error</p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1-\alpha\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples-in-medical-diagonistic-tests">
+<h2>Examples in medical diagonistic tests<a class="headerlink" href="#examples-in-medical-diagonistic-tests" title="Link to this heading">#</a></h2>
+<p>In the analysis of medical diagonsis tests, there is a similar rubric with its own conventional terminology:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Condition positive</p></th>
+<th class="head"><p>Condition negative</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test positive</p></td>
+<td><p>True positive <span class="math notranslate nohighlight">\(TP\)</span></p></td>
+<td><p>False positive <span class="math notranslate nohighlight">\(FP\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Test negative</p></td>
+<td><p>False negative <span class="math notranslate nohighlight">\(FN\)</span></p></td>
+<td><p>True negative <span class="math notranslate nohighlight">\(TN\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>The frequency of non-error</p></td>
+<td><p>sensitivity <span class="math notranslate nohighlight">\(\frac{TP}{TP+FN}\)</span></p></td>
+<td><p>specificity <span class="math notranslate nohighlight">\(\frac{TN}{FP+TN}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>A couple of notes:</p>
+<ul class="simple">
+<li><p>Unlike the above tables, the values <span class="math notranslate nohighlight">\(TP, FN, FP, TN\)</span> are counts of outcomes and hence natural numbers rather than probabilities.</p></li>
+<li><p>A test which has high sensitivity but low specificity has fewer false negatives but more false positives.</p></li>
+<li><p>A test which has low sensitivity but high specificity has more false negatives and fewer false positives.</p></li>
+</ul>
+<p>Here are some simple examples:</p>
+<ol class="arabic simple">
+<li><p>Digital mammograms have high sensitivity but lower specificity (see <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5991925/">this paper</a>)</p></li>
+<li><p>Over the counter covid tests have lower sensitivity but high specificity (see bottom of <a class="reference external" href="https://www.nytimes.com/wirecutter/reviews/at-home-covid-test-kits/">this nytimes page</a>)</p></li>
+</ol>
+<p>There are two options for this problem.</p>
+<p>Option 1: Mayo’s idea is that one should defend the classical view by arguing that as a general rule, we should accept only those hypotheses which have undergone a severe test in the sense that they have low probability of a type I error. Under the above correspondence (borne out in part by Option 2), this would suggest that, as a general rule, we should accept only those hypotheses which have undergone a test with high specificity or a test with very few false positives. Write a 1 paragraph essay which evaluates whether this is plausible, bearing in mind that one will have to have a more expansive notion of “condition” that works outside of health contexts as well.</p>
+<p>Option 2: Given a medical diagnosis test as above with patients being the union of TP, FN, FP, TN, construct a hypothesis test whose power <span class="math notranslate nohighlight">\(1-\beta\)</span> is the sensitivity of the diagnosis test and whose <span class="math notranslate nohighlight">\(1-\alpha\)</span> is the specificity of the diagnosis test. This shows that the hypothesis testing is a more general concept than the medical diagonsis case.</p>
+<p><em>Hint (kind of an outline of a solution)</em>: make the sample space the union of the four sets  TP, FN, FP, TN (draw a picture of them as four quadrants of a square). Let <span class="math notranslate nohighlight">\(X\)</span> be the random variable which is <span class="math notranslate nohighlight">\(1\)</span> on <span class="math notranslate nohighlight">\(TP\cup FP\)</span> and 0 on <span class="math notranslate nohighlight">\(FN\cup TN\)</span>. Consider a two element parameter space <span class="math notranslate nohighlight">\(\theta^-\)</span> (condition negative) and <span class="math notranslate nohighlight">\(\theta^+\)</span> (condition positive). Define</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(p_{\theta^-}(1)=\frac{FP}{FP+TN}\)</span> and <span class="math notranslate nohighlight">\(p_{\theta^-}(0)=1-p_{\theta^-}(1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p_{\theta^+}(0)=\frac{FN}{TP+FN}\)</span> and <span class="math notranslate nohighlight">\(p_{\theta^+}(1)=1-p_{\theta^+}(1)\)</span>.</p></li>
+</ul>
+<p>Consider the test <span class="math notranslate nohighlight">\(T\geq c\)</span>, where <span class="math notranslate nohighlight">\(T=X\)</span> and <span class="math notranslate nohighlight">\(c=1\)</span>, so that the test is <span class="math notranslate nohighlight">\(X\geq 1\)</span>. Then show</p>
+<ul class="simple">
+<li><p>if <span class="math notranslate nohighlight">\(X\sim p_{\theta^-}\)</span> and <span class="math notranslate nohighlight">\(\alpha=P(T\geq c)\)</span>, then <span class="math notranslate nohighlight">\(1-\alpha =  \frac{TN}{FP+TN}\)</span></p></li>
+<li><p>if <span class="math notranslate nohighlight">\(X\sim p_{\theta^+}\)</span> and <span class="math notranslate nohighlight">\(\beta = P(T&lt;c)\)</span>, then <span class="math notranslate nohighlight">\(1-\beta = \frac{TP}{TP+FN}\)</span>.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -407,20 +540,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problem06.html"
+       href="Problem08.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problem 6</p>
+        <p class="prev-next-title">Problem 8</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problem08.html"
+       href="Problem10.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problem 8</p>
+        <p class="prev-next-title">Problem 10</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -431,7 +564,21 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalling-and-formatting-the-two-types-of-errors">Recalling and formatting the two types of errors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-in-medical-diagonistic-tests">Examples in medical diagonistic tests</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
